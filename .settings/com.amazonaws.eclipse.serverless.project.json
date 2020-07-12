@@ -1,0 +1,1 @@
+{"packagePrefix":"com.serverless.lambda.student","lastDeploymentRegionId":"us-east-2","regionConfig":{"us-east-2":{"bucket":"s3-lambda-test-storage","stack":"StudentInfo-stack"}}}
