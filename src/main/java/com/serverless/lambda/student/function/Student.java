@@ -1,7 +1,14 @@
 package com.serverless.lambda.student.function;
 
+import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBAttribute;
+import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBHashKey;
+import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBTable;
+
+@DynamoDBTable(tableName = "Students")
 public class Student {
+	@DynamoDBHashKey
 	private long id;
+	@DynamoDBAttribute
 	private String name;
 	public long getId() {
 		return id;
